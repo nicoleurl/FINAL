@@ -13,6 +13,61 @@
 </head>
 
 <body>
+
+
+<!-- buy modal -->
+
+      <div id="buy" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content ">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Buy your ticket</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+  <h5 class="inbuy">Guests</h5>
+    <input type="number" class="form-control buyform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Guests">
+  </div>
+
+  <div class="form-group">
+  <h5 class="inbuy">Days</h5>
+    <input type="number" class="form-control buyform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Days">
+  </div>
+
+<div class="form-group">
+    <h5 class="inbuy">Cardholder</h5>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Number of guests">
+  </div>
+
+  <div class="form-group">
+     <h5 class="inbuy">Card number</h5>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Card number">
+  </div>
+  <div class="form-group">
+     <h5 class="inbuy">Expiration date</h5>
+    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="card number">
+  </div>
+   <div class="form-group">
+     <h5 class="inbuy">CVV</h5>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="cvv">
+  </div>
+
+  <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Buy your ticket</button>
+</form>
+
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
+
+
 	
 	<div class="contenedor2">
 
@@ -29,91 +84,9 @@
 				<li><a class="active" href="spots.html">Spots</a></li>
 				<li><a class="nav1" href="mylist.html">My List</a></li>
 				<li><a class="nav1" href="map.html">Map</a></li>
-				<li><button type="button" class="nav1" data-toggle="modal" data-target="#signin">sign in</button></li>
+				<li><button type="button" class="nav1" data-toggle="modal" data-target="#signin">log out</button></li><li><a style="color: #ac3126" class="nav1" data-toggle="modal" data-target="#buy" href="map.html">Buy Ticket</a></li>
 			</ul>
 		</nav>
-
-<!-- sign in modal -->
-<div id="signin" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content signinmodal">
-      <div class="modal-header">
-        <h4 class="modal-title">Sign In</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <h5 class="inform">Email</h5>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-     <h5 class="inform">Password</h5>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
-      Remember Me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Sign In</button>
-</form>
-        <button type="button" class="signupbtn" data-toggle="modal" data-target="#signup" data-dismiss="modal">Don't have an account? Sign up now.</button>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button flecha" class="btn btn-default flecha" data-dismiss="modal"> <img class="flecha" src="images/flecha.png"> </button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- sign up modal -->
-<div id="signup" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content signinmodal">
-      <div class="modal-header">
-       
-        <h4 class="modal-title">Sign Up</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-  <h5 class="inform">Name</h5>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-
-  <div class="form-group">
-    <h5 class="inform">Email</h5>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-
-  <div class="form-group">
-     <h5 class="inform">Password</h5>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-        <div class="form-group">
-     <h5 class="inform">Confirm password</h5>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-       <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Sign Up</button>
-</form>
-        <button type="button" class="signupbtn" data-toggle="modal" data-target="#signin" data-dismiss="modal">Already have an account? Sign in.</button>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button flecha" class="btn btn-default flecha" data-dismiss="modal"> <img class="flecha" src="images/flecha.png"> </button>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 
@@ -218,37 +191,40 @@
   <div class="row">
     
 
-      <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="col-4 listt">
+     <div class="card" >
+  <img class="card-img-top" src="images/hotel6.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title"> <a class="detaillink" href="hoteld.html"> Casa Colonial</a></h4>
+    <h4 class="sub-title">House</h4>
+    <p class="card-text">$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/hotel5.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Colonial Apartment</h4>
+    <h4 class="sub-title">House</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/hotel8.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Studio Zona Colonial</h4>
+    <h4 class="sub-title">House</h4>
+    <p class="card-text">$$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -270,36 +246,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+       <div class="card listt" >
+  <img class="card-img-top" src="images/hotel2.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Hotel Doña Elvira</h4>
+    <h4 class="sub-title">Hotel</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+       <div class="card listt" >
+  <img class="card-img-top" src="images/hotel3.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Hotel Europa</h4>
+    <h4 class="sub-title">Hotel</h4>
+    <p class="card-text">$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+       <div class="card listt" >
+  <img class="card-img-top" src="images/hotel4.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Abyta Hotel</h4>
+    <h4 class="sub-title">Hotel</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -323,36 +302,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+     <div class="card listt" >
+  <img class="card-img-top" src="images/hotel5.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Hostal La Colonia</h4>
+    <h4 class="sub-title">Hotel</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+     <div class="card listt" >
+  <img class="card-img-top" src="images/hotel6.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Hotel Atarazana</h4>
+    <h4 class="sub-title">Hotel</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+     <div class="card listt" >
+  <img class="card-img-top" src="images/hotel4.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Luxury Residence</h4>
+    <h4 class="sub-title">House</h4>
+    <p class="card-text">$$$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -381,9 +363,13 @@
     Type
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Hotel</a>
-    <a class="dropdown-item" href="#">House</a>
-    <a class="dropdown-item" href="#">Hostal</a>
+    <a class="dropdown-item" href="#">Caribbean</a>
+    <a class="dropdown-item" href="#">International</a>
+    <a class="dropdown-item" href="#">Breakfast</a>
+    <a class="dropdown-item" href="#">Mexican</a>
+    <a class="dropdown-item" href="#">Italian</a>
+    <a class="dropdown-item" href="#">Mediterranean</a>
+    <a class="dropdown-item" href="#">Sweets</a>
   </div>
 </div>
 
@@ -461,36 +447,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+       <div class="card listt" >
+  <img class="card-img-top" src="images/rest4.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title"><a class="detaillink" href="restd.html"> Maison Kreyol </a> </h4>
+    <h4 class="sub-title">Caribbean</h4>
+    <p class="card-text">$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+       <div class="card listt" >
+  <img class="card-img-top" src="images/rest7.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">D'Pamela Cafeteria</h4>
+    <h4 class="sub-title">Caribbean</h4>
+    <p class="card-text">$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+       <div class="card listt" >
+  <img class="card-img-top" src="images/rest3.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">María La Turca</h4>
+    <h4 class="sub-title">Sweets</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -512,36 +501,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/rest2.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Comedor Guillermo</h4>
+    <h4 class="sub-title">Caribbean</h4>
+    <p class="card-text">$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/rest2.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Kalenda</h4>
+    <h4 class="sub-title">Vegetarian</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/rest1.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Affogatto Cafe</h4>
+    <h4 class="sub-title">International</h4>
+    <p class="card-text">$$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -565,36 +557,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/rest3.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Zona Colonial Empanadas</h4>
+    <h4 class="sub-title">Italian</h4>
+    <p class="card-text">$  -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/rest5.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">El Sazon</h4>
+    <h4 class="sub-title">Caribbean</h4>
+    <p class="card-text">$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+     <div class="card listt" >
+  <img class="card-img-top" src="images/rest9.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Maná</h4>
+    <h4 class="sub-title">International</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -626,9 +621,9 @@
     Type
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Hotel</a>
-    <a class="dropdown-item" href="#">House</a>
-    <a class="dropdown-item" href="#">Hostal</a>
+    <a class="dropdown-item" href="#">Club</a>
+    <a class="dropdown-item" href="#">Live Music</a>
+    <a class="dropdown-item" href="#">Art</a>
   </div>
 </div>
 
@@ -708,36 +703,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/acti1.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title"><a class="detaillink" href="actid.html"> Bonye</a></h4>
+    <h4 class="sub-title">Live Music - Tropical Music</h4>
+    <p class="card-text">$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+    <div class="card listt" >
+  <img class="card-img-top" src="images/acti2.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Espiral</h4>
+    <h4 class="sub-title">Club - Electronic Music</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+     <div class="card listt" >
+  <img class="card-img-top" src="images/acti5.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Mamey</h4>
+    <h4 class="sub-title">Arts</h4>
+    <p class="card-text">$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -759,36 +757,39 @@
     
 
       <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+     <div class="card listt" >
+  <img class="card-img-top" src="images/acti7.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">Santo Libre</h4>
+    <h4 class="sub-title">Club - Electronic Music</h4>
+    <p class="card-text">$$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
     
 
     <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/acti2.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">El Sarten</h4>
+    <h4 class="sub-title">Club - Tropical Music</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
 
 
 <div class="col-4">
-      <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+      <div class="card listt" >
+  <img class="card-img-top" src="images/acti3.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <a href="#" class="btn btn-primary addto">add to list</a>
+    <h4 class="card-title">La Casa de Yura</h4>
+    <h4 class="sub-title">Club - Electronic Music</h4>
+    <p class="card-text">$$   -<span class="rate3"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></p>
   </div>
 </div>
 </div>
@@ -813,11 +814,14 @@
 
       <div class="col-4">
       <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <img class="card-img-top" src="images/acti7.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h4 class="card-title">Casita de Pepe</h4>
+    <p class="card-text">From monday to saturday<br>
+6:00 pm - 3:00 am<br>
+
+  US$7-12</p>
+    <a href="#" class="btn btn-primary">Add to List</a>
   </div>
 </div>
 </div>
@@ -825,11 +829,14 @@
 
     <div class="col-4">
       <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <img class="card-img-top" src="images/acti8.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h4 class="card-title">Yura Bar</h4>
+    <p class="card-text">From monday to saturday<br>
+5:00 pm - 2:00 am<br>
+
+  US$2-7</p>
+    <a href="#" class="btn btn-primary">Add to List</a>
   </div>
 </div>
 </div>
@@ -837,11 +844,14 @@
 
 <div class="col-4">
       <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <img class="card-img-top" src="images/acti9.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h4 class="card-title">Colonial Bar</h4>
+    <p class="card-text">From monday to saturday<br>
+6:00 pm - 3:00 am<br>
+
+  US$8-15</p>
+    <a href="#" class="btn btn-primary">Add to List</a>
   </div>
 </div>
 </div>

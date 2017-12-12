@@ -29,10 +29,61 @@
 				<li><a class="nav1" href="mylist.html">My List</a></li>
 				<li><a class="nav1" href="map.html">Map</a></li>
 				<li><button type="button" class="nav1">Log out</button></li>
+				<li><a style="color: #ac3126" class="nav1" data-toggle="modal" data-target="#buy" href="map.html">Buy Ticket</a></li>
+				
 			</ul>
 		</nav>
 
 
+
+<div id="buy" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content ">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Buy your ticket</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+  <h5 class="inbuy">Guests</h5>
+    <input type="number" class="form-control buyform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Guests">
+  </div>
+
+  <div class="form-group">
+  <h5 class="inbuy">Days</h5>
+    <input type="number" class="form-control buyform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Days">
+  </div>
+
+<div class="form-group">
+    <h5 class="inbuy">Cardholder</h5>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Number of guests">
+  </div>
+
+  <div class="form-group">
+     <h5 class="inbuy">Card number</h5>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Card number">
+  </div>
+  <div class="form-group">
+     <h5 class="inbuy">Expiration date</h5>
+    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="card number">
+  </div>
+   <div class="form-group">
+     <h5 class="inbuy">CVV</h5>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="cvv">
+  </div>
+
+  <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Buy your ticket</button>
+</form>
+
+      </div>
+     
+    </div>
+
+  </div>
+</div>
 
 
 <!-- descripcion -->
