@@ -263,7 +263,6 @@ height: 229px;
 	background-color: #E3EBF2;
 	margin-left: 0;
 	border-radius:20px;
-	height: 200px;
 
 }
 
@@ -573,3 +572,132 @@ ul {
       #target {
         width: 345px;
       }
+
+      .button-group {
+  margin-bottom: 20px;
+}
+
+
+.comment {
+	width: 100%;
+}
+
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.posts li {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 42px;
+}
+
+.sideimg {
+	margin-bottom: 30px; 
+}
+
+.type {
+	font-size: 1.7em;
+	font-weight: 400;
+	margin-left: -2px;
+}
+
+.name {
+	font-size: 4.5em;
+	font-weight: 600;
+	margin-left: -5px;
+	border: 1px solid red;
+}
+
+.summary {
+	margin-top: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400px;
+	font-size: 1.3em;
+}
+
+.add {
+	border: none;
+	background-color: #ccd5db;
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Quicksand', sans-serif;
+	align-items: center;
+
+}
+
+
+
+/*** OURTRAIN ***/
+
+
+h3 {
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+color:#A33125;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+
+ .foto2 {
+width: 100%;
+background-image: url(../images/ourtrain.png);
+height: 229px;
+
+}
+
+.iconos{
+	margin-right: 10px;
+}
+
+.segline {
+	margin-top: -20px;
+	margin-left: 33px;
+}
+
+.parrafotrain{
+	text-align: justify;
+	padding-right: 30px;
+
+}
+
+
+.contactbox{
+	padding-left: 30px;
+	
+}
+
+.botontrain {
+	margin:0 auto;
+	padding-top: 20px;
+	margin-bottom: 80px;
+}
+
+.maptrain 
+{
+flex-wrap: wrap; 
+}
+
+.maptrain2 {
+padding-top: 50px;
+
+}
+
+
+.button2 {
+	background-color: red;
+	color:white;
+}
