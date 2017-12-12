@@ -484,6 +484,8 @@ margin-bottom: 5%;
     background: url(../images/footerabout.png);
     text-align: center;
     padding: 3px 0px;
+    position: absolute;
+    bottom: 0;
 }
 
 .nav2 {
