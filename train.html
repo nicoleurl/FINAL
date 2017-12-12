@@ -28,91 +28,10 @@
 				<li><a class="nav1" href="spots.html">Spots</a></li>
 				<li><a class="nav1" href="mylist.html">My List</a></li>
 				<li><a class="nav1" href="map.html">Map</a></li>
-				<li><button type="button" class="nav1" data-toggle="modal" data-target="#signin">sign in</button></li>
+				<li><button type="button" class="nav1">Log out</button></li>
 			</ul>
 		</nav>
 
-<!-- sign in modal -->
-<div id="signin" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content signinmodal">
-      <div class="modal-header">
-        <h4 class="modal-title">Sign In</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <h5 class="inform">Email</h5>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-     <h5 class="inform">Password</h5>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
-      Remember Me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Sign In</button>
-</form>
-        <button type="button" class="signupbtn" data-toggle="modal" data-target="#signup" data-dismiss="modal">Don't have an account? Sign up now.</button>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button flecha" class="btn btn-default flecha" data-dismiss="modal"> <img class="flecha" src="images/flecha.png"> </button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- sign up modal -->
-<div id="signup" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content signinmodal">
-      <div class="modal-header">
-       
-        <h4 class="modal-title">Sign Up</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-  <h5 class="inform">Name</h5>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-
-  <div class="form-group">
-    <h5 class="inform">Email</h5>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-
-  <div class="form-group">
-     <h5 class="inform">Password</h5>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-        <div class="form-group">
-     <h5 class="inform">Confirm password</h5>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-       <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Sign Up</button>
-</form>
-        <button type="button" class="signupbtn" data-toggle="modal" data-target="#signin" data-dismiss="modal">Already have an account? Sign in.</button>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button flecha" class="btn btn-default flecha" data-dismiss="modal"> <img class="flecha" src="images/flecha.png"> </button>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 
@@ -171,7 +90,7 @@
 			<br>
 			<br>
 			<br>
-			<br><h3>RUTES OF THE GAME</h3>
+			<br><h3>RULES OF THE GAME</h3>
 			 <p>  
 			• To enter the train present the QR code.
 			 <br>
@@ -204,7 +123,8 @@
 			<p> • The train pases the stop every hour.<br>
 			</p>
 			<h3> Cost:</h3> <p>
-			US$ 10 per day.
+			US$ 10 per day.<br>
+			US$ 5 All Drinks and Beer
 			<br>
 			<h3> Services:</h3> 
 			<p> • Free WIFI.
@@ -221,11 +141,59 @@
 
 
 		<div class="botontrain">
-		 <a href="http://www.tri-rail.com/train-schedules/North-Weekend-AM-PM.JPG" target="_blank"><button type="button" class="why" >Download Train Schedule Here</button></a>
+		 <button type="button" class="buybutton" data-toggle="modal" data-target="#buy""> Buy a trip </button></a>
 
 		</div>
 			
-			
+			<div id="buy" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content ">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Buy your ticket</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+  <h5 class="inbuy">Guests</h5>
+    <input type="number" class="form-control buyform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Guests">
+  </div>
+
+  <div class="form-group">
+  <h5 class="inbuy">Days</h5>
+    <input type="number" class="form-control buyform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Days">
+  </div>
+
+<div class="form-group">
+    <h5 class="inbuy">Cardholder</h5>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Number of guests">
+  </div>
+
+  <div class="form-group">
+     <h5 class="inbuy">Card number</h5>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Card number">
+  </div>
+  <div class="form-group">
+     <h5 class="inbuy">Expiration date</h5>
+    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="card number">
+  </div>
+   <div class="form-group">
+     <h5 class="inbuy">CVV</h5>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="cvv">
+  </div>
+
+  <button type="submit" class="btn btn-primary btnsign" data-dismiss="modal">Buy your ticket</button>
+</form>
+
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
 
 
 			

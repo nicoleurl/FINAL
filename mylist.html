@@ -1,37 +1,37 @@
 <head>
-	<title>LOCALS:list</title>
-	<meta charset=:"utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>LOCALS:spots</title>
+  <meta charset=:"utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Quicksand:300,400,500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/style.css">
-  	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Quicksand:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <script src="https://use.fontawesome.com/bde821c3df.js"></script>
 
 </head>
 
 <body>
-	
-	<div class="contenedor2">
+  
+  <div class="contenedor2">
 
-	<!-- logo -->
-		<div class="logo"><img class="logo" src="images/logo.png"></div>
-		
+  <!-- logo -->
+    <div class="logo"><img class="logo" src="images/logo.png"></div>
+    
 
-	<!-- nav links -->
-		<nav>
-			<ul>
-				<li><a class="nav1" href="index.html">Home</a></li>
-				<li><a class="nav1" href="about.html">About</a></li>
-				<li><a class="nav1" href="train.html">Our Train</a></li>
-				<li><a class="nav1" href="spots.html">Spots</a></li>
-				<li><a class="active" href="mylist.html">My List</a></li>
-				<li><a class="nav1" href="map.html">Map</a></li>
-				<li><button type="button" class="nav1" data-toggle="modal" data-target="#signin">sign in</button></li>
-			</ul>
-		</nav>
+  <!-- nav links -->
+    <nav>
+      <ul>
+        <li><a class="nav1" href="index.html">Home</a></li>
+        <li><a class="nav1" href="about.html">About</a></li>
+        <li><a class="nav1" href="train.html">Our Train</a></li>
+        <li><a class="nav1" href="spots.html">Spots</a></li>
+        <li><a class="active" href="mylist.html">My List</a></li>
+        <li><a class="nav1" href="map.html">Map</a></li>
+        <li><button type="button" class="nav1" data-toggle="modal" data-target="#signin">sign in</button></li>
+      </ul>
+    </nav>
 
 <!-- sign in modal -->
 <div id="signin" class="modal fade" role="dialog">
@@ -111,18 +111,23 @@
         <button type="button flecha" class="btn btn-default flecha" data-dismiss="modal"> <img class="flecha" src="images/flecha.png"> </button>
       </div>
     </div>
-    </div>
-    </div>
- 
- <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+  </div>
+</div>
+
+
+
+<!-- tabs -->
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item tabsli">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Hotels</a>
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Hotels</a>
   </li>
   <li class="nav-item tabsli">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Restaurants</a>
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Restaurants</a>
   </li>
   <li class="nav-item tabsli">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Activities</a>
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Activities</a>
   </li>
 </ul>
 
@@ -130,26 +135,738 @@
 <!-- hotels -->
 
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-    </div>
+<!-- filters -->
+<div class="row">
+<div class="col-1"></div> 
 
+  <div class="col-10 filters"> 
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Type
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Hotel</a>
+    <a class="dropdown-item" href="#">House</a>
+    <a class="dropdown-item" href="#">Hostal</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Price
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">$</a>
+    <a class="dropdown-item" href="#">$$</a>
+    <a class="dropdown-item" href="#">$$$</a>
+     <a class="dropdown-item" href="#">$$$$</a>
+      <a class="dropdown-item" href="#">$$$$$</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Rating
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+<a class="dropdown-item" href="#">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+<a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+  </div>
+
+</div>
+
+</div>
+
+<div class="col-1"></div>
+
+</div>
+
+
+<!--   posts -->
+
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+<!-- line two -->
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+
+  <!-- line three -->
+
+  <div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+</div>
 
 
 <!-- restaurant -->
 
 
-  <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
- 
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+<div class="row">
+<div class="col-1"></div> 
+
+  <div class="col-10 filters"> 
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Type
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Hotel</a>
+    <a class="dropdown-item" href="#">House</a>
+    <a class="dropdown-item" href="#">Hostal</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Price
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">$</a>
+    <a class="dropdown-item" href="#">$$</a>
+    <a class="dropdown-item" href="#">$$$</a>
+     <a class="dropdown-item" href="#">$$$$</a>
+      <a class="dropdown-item" href="#">$$$$$</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Rating
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+<a class="dropdown-item" href="#">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+<a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Schedule
+  </button>
+  <div class="dropdown-menu isopen">
+  <p>Is open at:</p>
+    <input class="tiempo" type="time" name="Schedule" value="16:32"> <button><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="col-1"></div>
+
+</div>
+
+  <div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 </div>
 
 
-<!-- activity -->
-<div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab">
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+<!-- line two -->
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
 </div>
 
 
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+
+  <!-- line three -->
+
+  <div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+
+
+
+  </div>
+
+
+<!-- activities -->  
+
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<div class="row">
+<div class="col-1"></div> 
+
+  <div class="col-10 filters"> 
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Type
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Hotel</a>
+    <a class="dropdown-item" href="#">House</a>
+    <a class="dropdown-item" href="#">Hostal</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Price
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">$</a>
+    <a class="dropdown-item" href="#">$$</a>
+    <a class="dropdown-item" href="#">$$$</a>
+     <a class="dropdown-item" href="#">$$$$</a>
+      <a class="dropdown-item" href="#">$$$$$</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Rating
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+    <a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+<a class="dropdown-item" href="#">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+
+<a class="dropdown-item" href="#"><i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+</a>
+  </div>
+</div>
+
+<div class="btn-group">
+
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Schedule
+  </button>
+  <div class="dropdown-menu isopen">
+  <p>Is open at:</p>
+    <input class="tiempo" type="time" name="Schedule" value="16:32"> <button><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="col-1"></div>
+
+</div>
+  
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+
+
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+<!-- line two -->
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+
+  <!-- line three -->
+
+  <div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <div class="row">
+    
+
+      <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+    
+
+    <div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col-4">
+      <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/home.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+      </div>
+  
+  </div>
+  </div>
+
+   
+  <div class="col-1"></div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- footer -->
 
 <footer class="footer1"> 
 
